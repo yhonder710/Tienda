@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useEffect } from "react"
 
-export function Products () {
+export function useApi () {
   const [data, setData] = useState()
 
   const datosProduct = async () => {
@@ -13,4 +13,6 @@ export function Products () {
   useEffect(() => {
     datosProduct()
   },[])
+
+  return { data }
 }

@@ -1,25 +1,11 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./page/Home.jsx"
-import About from "./page/About.jsx"
-import { Naybar } from "./components/Naybar.jsx"
-import { useState } from "react"
-import { useEffect } from "react"
-
+import { useApi } from './hook/useApi.js'
 
 function App() {
-  const [data, setData] = useState()
 
-  const datosProduct = async () => {
-    const reponse = await fetch('https://dummyjson.com/products')
-    const results = await reponse.json()
-    setData(results)
-  }
-
-  useEffect(() => {
-    datosProduct()
-  },[])
+  const { data } = useApi()
 
   console.log(data)
+
 
   return (
   <div className="grid place-content-center min-h-screen">
