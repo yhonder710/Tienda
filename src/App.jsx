@@ -1,16 +1,13 @@
-import { useApi } from './hook/useApi.js'
+
+import { MyRouter } from './router/router.jsx'
 
 function App() {
 
-  const { data } = useApi()
-
-  console.log(data)
-
 
   return (
-  <div className="grid place-content-center min-h-screen">
-  </div>
-
+    <>
+     <MyRouter/>
+    </>
   )
 }
 
