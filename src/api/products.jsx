@@ -1,12 +1,7 @@
-import { Route, Routes } from "react-router-dom"
-import Home from "./page/Home.jsx"
-import About from "./page/About.jsx"
-import { Naybar } from "./components/Naybar.jsx"
 import { useState } from "react"
 import { useEffect } from "react"
 
-
-function App() {
+export function Products () {
   const [data, setData] = useState()
 
   const datosProduct = async () => {
@@ -18,14 +13,4 @@ function App() {
   useEffect(() => {
     datosProduct()
   },[])
-
-  console.log(data)
-
-  return (
-  <div className="grid place-content-center min-h-screen">
-  </div>
-
-  )
 }
-
-export default App
