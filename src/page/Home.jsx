@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <h1>Home component</h1>
+    <h1 className="text-5xl">Hola</h1>
   )
 }
 
