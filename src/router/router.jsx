@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Naybar } from '../components/Naybar.jsx'
 import Login from '../page/Login.jsx'
 import Home from '../page/Home.jsx'
@@ -10,7 +10,6 @@ import Promociones from '../page/Promociones.jsx'
 export function MyRouter () {
   return (
     <>
-    <BrowserRouter>
     <Naybar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -19,7 +18,6 @@ export function MyRouter () {
         <Route path='/envios' element={<Envios/>}/>
         <Route path='/promociones' element={<Promociones/>}/>
       </Routes>
-    </BrowserRouter>
     </>
   )
 }
