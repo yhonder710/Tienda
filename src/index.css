@@ -1,4 +1,13 @@
 @import "tailwindcss";
+@layer components{
+  .nav{
+    display: none;
+  }
+
+  .nav.on{
+    @apply flex justify-between items-center text-3xl font-bold bg-transparent p-5
+  }
+}
 
 
 :root {
