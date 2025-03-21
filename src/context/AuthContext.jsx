@@ -34,7 +34,6 @@ export const AuthContextProvider = ({ children }) => {
         navigate('/login', {replace:true})
       } else {
         setUser(session?.user.user_metadata)
-        console.log(session?.user.user_metadata)
         navigate('/', {replace:true})
       }
     })
