@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Noto+Sans+TC:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  font-family: "Noto Sans";
+}
+
+
+@import "tailwindcss";
+@layer components{
+  .fondo{ background: rgb(105,110,255);
+    background: linear-gradient(90deg, rgba(105,110,255,1) 0%, rgba(248,172,255,1) 100%);
+  }
+
+  .card {
+    backdrop-filter: blur(12px) saturate(178%);
+    -webkit-backdrop-filter: blur(12px) saturate(178%);
+    background-color: rgba(97, 24, 112, 0.329);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+  .title{
+    color: #fff;
+    font-family: "Creepster";
+    letter-spacing: 5px;
+    background: rgb(205,4,188);
+    background: linear-gradient(0deg, rgba(205,4,188,1) 0%, rgba(74,0,143,1) 100%);
+    -webkit-background-clip: text; /* Clipa el fondo al texto */
+    -webkit-text-fill-color: transparent; /* Hace que el color del texto sea transparente */
+
+      font-size: 50px; /* Tamaño de la fuente */
+      color: white; /* Color del texto */
+      -webkit-text-stroke: 1px black; /* Grosor y color del borde */
+
+  }
+
+  .imagen{
+    border: 1px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .button{
+    transition: 500ms ease-in-out;
+  }
+}

@@ -8,6 +8,19 @@ export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState([])
   const navigate = useNavigate()
 
+  async function signInWithFacebook() {
+    try {
+      const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'facebook',
+    })
+
+      if (error) throw new Error('A ocurrido un error en la autenticacion')
+      return data;
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   async function signInWithGoogle() {
     try {
       const { data, error } = await supabase.auth.signInWithOAuth({
@@ -19,8 +32,23 @@ export const AuthContextProvider = ({ children }) => {
     } catch (error) {
       console.error(error)
     }
-
   }
+
+  async function signInWithDiscord() {
+    try {
+      const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'discord',
+    })
+
+      if (error) throw new Error('A ocurrido un error en la autenticacion')
+      return data;
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+
+
 
   async function signOut() {
     const { error } = await supabase.auth.signOut()
@@ -45,7 +73,7 @@ export const AuthContextProvider = ({ children }) => {
   },[])
 
   return (
-    <AuthContext.Provider value={{signInWithGoogle, signOut, user}}>
+    <AuthContext.Provider value={{signInWithGoogle, signInWithFacebook, signInWithDiscord, signOut, user}}>
       {children}
     </AuthContext.Provider>
   )
