@@ -10,14 +10,14 @@ const Login = () => {
 
   return (
     <div className='fondo grid place-content-center min-h-screen'>
-     <div className="card flex flex-col gap-5 px-40 p-20 rounded-2xl">
+     <div className="card flex flex-col gap-5 justify-center items-center p-15 px-25 rounded-2xl">
        <section>
          <img className='imagen w-50 rounded-4xl' src="https://static.vecteezy.com/system/resources/previews/005/076/592/non_2x/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg" alt="" />
        </section>
-       <section>
-         <h1 className="text-6xl font-bold text-center title">LOGIN</h1>
+       <section className='flex flex-col'>
+         <h1 className="text-[50px] font-bold text-center title">Inicia con</h1>
        </section>
-       <section className="flex flex-col gap-2.5">
+       <section className="flex gap-6 justify-center items-center">
          <ButtonGoogle click={signInWithGoogle}/>
          <ButtonFace click={signInWithFacebook}/>
          <ButtonDiscord click={signInWithDiscord}/>

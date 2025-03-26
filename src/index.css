@@ -7,6 +7,26 @@
   .nav.on{
     @apply flex w-full flex-col
   }
+
+  .nam{
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.4);
+  }
+
+  .border-color{
+    background: #24292f;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .home{
+    color: rgb(0, 0, 0);
+    background: #e2dfdf;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+
 }
 
 body{

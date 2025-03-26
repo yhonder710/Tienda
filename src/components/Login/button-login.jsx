@@ -4,9 +4,8 @@ import { BsFacebook } from "react-icons/bs";
 
 export function ButtonGoogle ({ click }) {
   return (
-    <button onClick={click} className="saturate-0 hover:saturate-100 bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button pr-1 cursor-pointer">
-      <FcGoogle size={40} />
-      <strong>Google</strong>
+    <button onClick={click} className="bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button cursor-pointer">
+      <FcGoogle size={50} />
     </button>
 
   )
@@ -14,9 +13,8 @@ export function ButtonGoogle ({ click }) {
 
 export function ButtonDiscord ({ click }) {
   return (
-    <button onClick={click} className="saturate-0 hover:saturate-100 bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button pr-1 cursor-pointer">
-      <BsDiscord size={40} color="#5865F2" />
-      <strong>Discord</strong>
+    <button onClick={click} className="bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button cursor-pointer ">
+      <BsDiscord size={50} color="#5865F2" />
     </button>
 
   )
@@ -24,9 +22,8 @@ export function ButtonDiscord ({ click }) {
 
 export function ButtonFace ({ click }) {
   return (
-    <button onClick={click} className="saturate-0 hover:saturate-100 bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button pr-1 cursor-pointer">
-      <BsFacebook size={40} color="#0B5AC6" />
-      <strong>Facebook</strong>
+    <button onClick={click} className="bg-white rounded-full p-0.5 flex text-black items-center gap-3 group justify-center button cursor-pointer ">
+      <BsFacebook size={50} color="#0B5AC6" />
     </button>
 
   )

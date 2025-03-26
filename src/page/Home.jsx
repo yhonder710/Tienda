@@ -1,17 +1,14 @@
-import { useApi } from '../hook/useApi.js'
+import '../components/Homee/home.css'
 
 
 const Home = () => {
-  const {data} = useApi()
-
-  console.log(data)
 
   return (
-    <>
-    <div className=''>
-      <h1 className="text-center text-5xl font-bold pt-5">Bienvenido querido usuario</h1>
+    <main>
+      <div className="color h-[90vh]">
+      <h1>hola mundo</h1>
       </div>
-    </>
+    </main>
   )
 }
 
