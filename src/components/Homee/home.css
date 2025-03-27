@@ -2,7 +2,7 @@
 
   .color{
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, #0d0d0d 25%, rgba(79,57,246,1) 91%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(28,125,121,1) 100%);
     padding-top: 25px;
   }
 
