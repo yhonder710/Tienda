@@ -65,7 +65,7 @@
     align-items: center;
     cursor: pointer;
     gap: 0.5rem;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: 0.3s, box-shadow 0.3s;
 }
 
 .button-salir:hover {
@@ -83,6 +83,12 @@
 
 .button-salir.dark:hover {
     background-color: #000000;
+}
+
+select {
+  background-color: rgb(255, 255, 255); /* Cambia el fondo del select */
+  color: black; /* Cambia el color del texto */
+  border: 1px solid #ccc; /* Estilo del borde */
 }
 
 }
