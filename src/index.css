@@ -26,6 +26,24 @@
     font-weight: bold;
   }
 
+  /* Nav usuarios */
+  .cart{
+    @apply overflow-hidden bg-black/30 w-10 right-5.5 top-28 h-1 border-2 border-white absolute rounded-[8px] transition-all
+  }
+
+  .cart.on{
+    height: 500px;
+    width: 400px;
+  }
+
+  .contentCard{
+    display: none;
+  }
+
+  .contentCard.on{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 
