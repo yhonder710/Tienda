@@ -47,9 +47,6 @@ export const AuthContextProvider = ({ children }) => {
     }
   }
 
-
-
-
   async function signOut() {
     const { error } = await supabase.auth.signOut()
     navigate(0)
