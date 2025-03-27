@@ -8,8 +8,8 @@
 
 
 @layer components{
-  .fondo{background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,8,112,1) 50%, rgba(0,0,0,1) 100%);
+  .fondo{background: rgb(34,160,154);
+    background: linear-gradient(133deg, rgba(34,160,154,1) 0%, rgba(0,0,0,1) 100%);
   }
 
   .card {
@@ -36,8 +36,8 @@
     color: #fff;
     font-family: "Creepster";
     letter-spacing: 5px;
-    background: rgb(42,8,112);
-    background: linear-gradient(0deg, rgba(42,8,112,1) 0%, rgba(255,255,255,1) 82%);
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,255,243,1) 73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
