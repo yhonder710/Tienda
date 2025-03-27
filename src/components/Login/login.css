@@ -19,7 +19,18 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     box-shadow: 0 0 8 rgba(0, 0, 0, 0.3);
+
+    /* ajustes del contenedor de todo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 3.75rem 6.25rem;
+    border-radius: 1rem;
+
 }
+
 
   .title{
     color: #fff;
@@ -41,7 +52,13 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   }
 
+
   .button{
     transition: 500ms ease-in-out;
   }
+
+  /* animado */
+
+
+
 }
