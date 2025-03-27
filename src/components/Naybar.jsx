@@ -31,14 +31,14 @@ export function Naybar () {
         {/* section 1 */}
          <div className="flex w-full justify-between items-center py-2.5 px-4 text-[18px] bg-indigo-600">
           <div>
-            <Link className="home flex items-center gap-1.5" to={'/'}><MdLaptop size={25}/> Home</Link>
+            <Link className="home" to={'/'}><MdLaptop size={25}/> Home</Link>
           </div>
           <div className="flex gap-5">
-            <Link className="border-color flex items-center gap-1.5" to={'/envios'}><FaTruck/> Envios</Link>
-            <Link className="border-color flex items-center gap-1.5" to={'/products'}><BsBagDashFill/> Products</Link>
-            <Link className="border-color flex items-center 0.5" to={'/promociones'}><BsCurrencyDollar/> Promociones</Link>
+            <Link className="border-color" to={'/envios'}><FaTruck/> Envios</Link>
+            <Link className="border-color" to={'/products'}><BsBagDashFill/> Products</Link>
+            <Link className="border-color" to={'/promociones'}><BsCurrencyDollar/> Promociones</Link>
           </div>
-          <button onClick={signOut} className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#000000]  cursor-pointer w-auto gap-2">Sign Out <MdExitToApp size={25}/></button>
+          <button onClick={signOut} className="button-salir">Sign Out <MdExitToApp size={25}/></button>
          </div>
           {/* section 2 */}
          <div className="nam flex w-full justify-between items-center py-2 px-4 text-[18px] bg-[#24292F]">

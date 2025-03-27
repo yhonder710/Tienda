@@ -44,8 +44,4 @@
   .button{
     transition: 500ms ease-in-out;
   }
-
-  .icon{
-    background: #f0e;
-  }
 }

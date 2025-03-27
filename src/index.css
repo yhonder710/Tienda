@@ -16,6 +16,9 @@
     background: #24292f;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
   }
 
   .home{
@@ -24,8 +27,45 @@
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
   }
 
+
+  /* este es el boton de sin out*/
+
+  .button-salir {
+    color: white;
+    background-color: #24292F;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-salir:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.button-salir:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(36, 41, 47, 0.5);
+}
+
+.button-salir.dark:focus {
+    box-shadow: 0 0 0 4px gray;
+}
+
+.button-salir.dark:hover {
+    background-color: #000000;
+}
 
 }
 
